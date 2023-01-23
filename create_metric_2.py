@@ -13,7 +13,6 @@ body = Monitor(
 )
 
 configuration = Configuration()
-
 with ApiClient(configuration) as api_client:
     api_instance = MonitorsApi(api_client)
     response = api_instance.create_monitor(body=body)
