@@ -5,10 +5,10 @@ from datadog_api_client.v1.model.monitor_type import MonitorType
 
 
 body = Monitor(
-    name="High avg CPU load (7)",
+    name="High avg CPU load",
     query='avg(last_1h):avg:system.load.1{host:MacBook-Pro.local} by {host} > 7',
     type=MonitorType("query alert"),
-    message="test 3",
+    message="This alert is triggered when the avg cpu load over the past hour is greater than 7.",
     priority=4,
 )
 
