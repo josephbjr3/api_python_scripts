@@ -13,8 +13,6 @@ body = Monitor(
 )
 
 configuration = Configuration()
-configuration.api_key["apiKeyAuth"] = "1363684daf076a499b10c52082d542ae"
-configuration.api_key["appKeyAuth"] = "0ca46e3fe140999decb263add084df1b6346909c"
 
 with ApiClient(configuration) as api_client:
     api_instance = MonitorsApi(api_client)
