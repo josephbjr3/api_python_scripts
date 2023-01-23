@@ -2,8 +2,8 @@ import json
 import requests
 
 # Set the API key and application key
-api_key = '1363684daf076a499b10c52082d542ae'
-app_key = '0ca46e3fe140999decb263add084df1b6346909c'
+api_key = '<api key>' #took out my api key for security
+app_key = '<app key>' #took out my app key for security
 
 # Create the monitor
 monitor_data = {
