@@ -6,6 +6,10 @@ from datadog_api_client import ApiClient, Configuration
 from datadog_api_client.v1.api.monitors_api import MonitorsApi
 from datadog_api_client.v1.model.monitor import Monitor
 from datadog_api_client.v1.model.monitor_type import MonitorType
+from datadog_api_client.v1.model.monitor_options import MonitorOptions
+from datadog_api_client.v1.model.monitor_thresholds import MonitorThresholds
+
+
 import os
 
 
@@ -15,6 +19,13 @@ body = Monitor(
     type=MonitorType("query alert"),
     message="This alert is triggered when the avg cpu load over the past hour is greater than 7.",
     priority=4,
+    options=MonitorOptions(
+        thresholds=MonitorThresholds(
+            critical=7.0,
+        ),
+        notify_no_data=False,
+        no_data_timeframe=20
+    )
 )
 
 configuration = Configuration()

@@ -11,13 +11,13 @@ monitor_data = {
     'name': 'High CPU load on {{host.name}}',
     'message': 'test',
     'type': 'query alert',
+    'priority': 4,
     'thresholds': {'critical': 1.0},
     'notify_no_data': False,
     'no_data_timeframe': 20,
 }
 
 headers = {
-    # 'Content-type': 'application/json',
     'DD-API-KEY': api_key,
     'DD-APPLICATION-KEY': app_key
 }
