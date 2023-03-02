@@ -1,4 +1,4 @@
 This projects conatins python scripts that interact with Datadog's API.
 
-Api calls included:
+API calls made include:
 create/delete/get monitor(s)
