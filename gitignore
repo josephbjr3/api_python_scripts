@@ -1,0 +1,2 @@
+# ignore txt file that contains my API and APP key
+/datadog_api_python_scripts/dataddog_comand_to_run.txt 
